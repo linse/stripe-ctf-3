@@ -1,0 +1,245 @@
+blob
+mark :1000000
+data 121
+Private Gitcoin ledger
+==============
+gdb: 23
+siddarth: 42
+christian: 30
+andy: 12
+nelhage: 45
+carl: 30
+ludwig: 20
+pa: 30
+
+progress [/home/schirmer/stripe-writeup/level1] 1 objects
+blob
+mark :1000001
+data 1293
+# Gitcoin
+
+Welcome to the wonderful world of Gitcoin!
+
+## Overview
+
+The balances are all contained in `LEDGER.txt`. We also have provided
+you with a sample Gitcoin mining script in `miner` -- you'll probably
+notice it's too slow to use in practice though. Note that for this
+level you won't submit any code to us, as you'll be running everything
+locally (you're welcome to email us solutions if you think they are
+particularly cool, though).
+
+The only commits that can be pushed are ones that:
+
+- Increments an existing ledger entry by 1, or adds a new ledger entry
+  with balance: 1; and
+- Has a SHA1 lexicographically less than the value in `difficulty.txt`.
+
+Add yourself to `LEDGER.txt` to pass the level (worth 50 points), at
+which points the bots will stop.
+
+Once you're done, check your account page to advance to the global
+Gitcoin instance, where you can earn unbounded numbers of leaderboard
+points.
+
+Note that until you pass the level we'll periodically start a new
+Gitcoin instance, at which point you'll have to run `git reset --hard
+origin/master` to reset your clone's state.
+
+## Catalog
+
+- `difficulty.txt`: A strict upper bound on valid Gitcoin SHA1 values.
+
+- `miner`: A sample Gitcoin mining script.
+
+- `LEDGER.txt`: The current Gitcoin balances.
+
+- `README.md`: This file.
+
+progress [/home/schirmer/stripe-writeup/level1] 2 objects
+blob
+mark :1000002
+data 7
+000001
+
+progress [/home/schirmer/stripe-writeup/level1] 3 objects
+blob
+mark :1000003
+data 2170
+#!/bin/bash
+
+set -eu
+
+if [ "$#" != 2 ]; then
+    echo >&2 "Usage: $0 <clone_url> <public_username>
+
+A VERY SLOW mining implementation. This should give you an idea of
+where to start, but it probably won't successfully mine you any
+Gitcoins.
+
+Arguments:
+
+<clone_url> is the string you'd pass to git clone (i.e.
+  something of the form username@hostname:path)
+
+<public_username> is the public username provided to you in
+  the CTF web interface."
+    exit 1
+fi
+
+export clone_spec=$1
+export public_username=$2
+
+prepare_index() {
+    perl -i -pe 's/($ENV{public_username}: )(\d+)/$1 . ($2+1)/e' LEDGER.txt
+    grep -q "$public_username" LEDGER.txt || echo "$public_username: 1" >> LEDGER.txt
+
+    git add LEDGER.txt
+}
+
+solve() {
+    # Brute force until you find something that's lexicographically
+    # small than $difficulty.
+    difficulty=$(cat difficulty.txt)
+
+    # Create a Git tree object reflecting our current working
+    # directory
+    tree=$(git write-tree)
+    parent=$(git rev-parse HEAD)
+    timestamp=$(date +%s)
+
+    counter=0
+
+    while let counter=counter+1; do
+	echo -n .
+
+	body="tree $tree
+parent $parent
+author CTF user <me@example.com> $timestamp +0000
+committer CTF user <me@example.com> $timestamp +0000
+
+Give me a Gitcoin
+
+$counter"
+
+	# See http://git-scm.com/book/en/Git-Internals-Git-Objects for
+	# details on Git objects.
+	sha1=$(git hash-object -t commit --stdin <<< "$body")
+
+	if [ "$sha1" "<" "$difficulty" ]; then
+	    echo
+	    echo "Mined a Gitcoin with commit: $sha1"
+	    git hash-object -t commit --stdin -w <<< "$body"  > /dev/null
+	    git reset --hard "$sha1" > /dev/null
+	    break
+	fi
+    done
+}
+
+reset() {
+    git fetch origin master >/dev/null 2>/dev/null
+    git reset --hard origin/master >/dev/null
+}
+
+# Set up repo
+local_path=./${clone_spec##*:}
+
+if [ -d "$local_path" ]; then
+    echo "Using existing repository at $local_path"
+    cd "$local_path"
+else
+    echo "Cloning repository to $local_path"
+    git clone "$clone_spec" "$local_path"
+    cd "$local_path"
+fi
+
+while true; do
+    prepare_index
+    solve
+    if git push origin master; then
+	echo "Success :)"
+	break
+    else
+	echo "Starting over :("
+	reset
+    fi
+done
+
+progress [/home/schirmer/stripe-writeup/level1] 4 objects
+reset refs/remotes/origin/master-A
+commit refs/remotes/origin/master-A
+mark :1000004
+author Flying Spaghetti Monster <root@gitcoin1.ctf-3.stripe-ctf.com> 1390540500 +0000
+committer Flying Spaghetti Monster <root@gitcoin1.ctf-3.stripe-ctf.com> 1390540500 +0000
+data 30
+Starting commit for new round
+M 100644 :1000000 LEDGER.txt
+M 100644 :1000001 README.md
+M 100644 :1000002 difficulty.txt
+M 100755 :1000003 miner
+
+progress [/home/schirmer/stripe-writeup/level1] 5 objects
+blob
+mark :1000005
+data 121
+Private Gitcoin ledger
+==============
+gdb: 23
+siddarth: 42
+christian: 31
+andy: 12
+nelhage: 45
+carl: 30
+ludwig: 20
+pa: 30
+
+progress [/home/schirmer/stripe-writeup/level1] 6 objects
+commit refs/remotes/origin/master-A
+mark :1000006
+author Stripe CTF <ctf@stripe.com> 1390540500 +0000
+committer Stripe CTF <ctf@stripe.com> 1390540500 +0000
+data 31
+Mined a Gitcoin!
+nonce 030a4ce7from :1000004
+M 100644 :1000005 LEDGER.txt
+
+progress [/home/schirmer/stripe-writeup/level1] 7 objects
+blob
+mark :1000007
+data 139
+Private Gitcoin ledger
+==============
+gdb: 39
+siddarth: 58
+christian: 47
+andy: 28
+nelhage: 61
+carl: 46
+ludwig: 36
+pa: 46
+user-vyz65jfl: 17
+
+progress [/home/schirmer/stripe-writeup/level1] 8 objects
+reset refs/heads/master-A
+commit refs/heads/master-A
+mark :1000008
+author CTF user <me@example.com> 1392770512
+committer CTF user <me@example.com> 1392770512
+data 52
+Give me a Gitcoin
+
+F2CF20C28F84E1ADEDF539CD3AB40BA1
+from :1000006
+M 100644 :1000007 LEDGER.txt
+M 100644 :1000001 README.md
+M 100644 :1000002 difficulty.txt
+M 100755 :1000003 miner
+
+progress [/home/schirmer/stripe-writeup/level1] 9 objects
+reset refs/heads/master-A
+from :1000008
+
+progress [/home/schirmer/stripe-writeup/level1] 10 objects
+reset refs/remotes/origin/master-A
+from :1000006
+

@@ -1,0 +1,165 @@
+No test case supplied. Randomly choosing among defaults.
+Building your code via `build.sh`.
+Done building your code.
+About to run test case: level2-x9NNVGpudm
+Beginning run.
+The shield is up and listening.
+The backend is up and listening.
+The backend is up and listening.
+Using seed 940e5d1fbd2de4ac59a7e867ff303b96e5de024fabe7aa9c3a41432ae17eba13
+Checking if backends are up.
+Upstream server is up.
+Upstream server is up.
+Upstream server is up.
+Scoring now
+Round
+IP WITPGB88 (mouse): 2
+IP ITTJPUZG (mouse): 2
+IP NZ7FM49F (mouse): 2
+Round
+IP WITPGB88 (mouse): 2
+IP ITTJPUZG (mouse): 2
+IP NZ7FM49F (mouse): 2
+Round
+IP IPFGHPGJ (mouse): 2
+IP S3KOUKRK (mouse): 2
+Round
+IP IPFGHPGJ (mouse): 2
+IP S3KOUKRK (mouse): 2
+Round
+IP U59RTE0Q (mouse): 2
+IP P0AE96GS (mouse): 2
+IP O8IE18OT (mouse): 2
+IP H7SBM6MJ (mouse): 2
+Round
+IP U59RTE0Q (mouse): 2
+IP P0AE96GS (mouse): 2
+IP O8IE18OT (mouse): 2
+IP H7SBM6MJ (mouse): 2
+Round
+IP TS9B8OHJ (mouse): 2
+Round
+IP TS9B8OHJ (mouse): 2
+Round
+IP JZN07STT (mouse): 2
+IP I8A0OZ4J (mouse): 2
+IP GXMQP7TO (mouse): 2
+Round
+IP JZN07STT (mouse): 2
+IP I8A0OZ4J (mouse): 2
+IP GXMQP7TO (mouse): 2
+Round
+IP FNHQKNQF (mouse): 2
+IP QRNVKTRT (mouse): 2
+IP 1VMZTR9Q (mouse): 2
+Round
+IP FNHQKNQF (mouse): 2
+IP QRNVKTRT (mouse): 2
+IP 1VMZTR9Q (mouse): 2
+Round
+IP TM3NQEKZ (mouse): 2
+IP CBK02EEE (mouse): 2
+IP QGEECZMR (mouse): 2
+Round
+IP TM3NQEKZ (mouse): 2
+IP CBK02EEE (mouse): 2
+IP QGEECZMR (mouse): 2
+Round
+IP OT1F00NI (mouse): 2
+IP 5OP75P9I (mouse): 2
+Round
+IP OT1F00NI (mouse): 2
+IP 5OP75P9I (mouse): 2
+Round
+IP 2VHO7413 (mouse): 2
+IP 57E6W0UD (mouse): 2
+IP EGVBS71C (mouse): 2
+Round
+IP 2VHO7413 (mouse): 2
+IP 57E6W0UD (mouse): 2
+IP EGVBS71C (mouse): 2
+Round
+IP HSLN4TFZ (mouse): 2
+IP T2CDU8A5 (mouse): 2
+IP SDU8I1T0 (mouse): 2
+IP BSUAOFHB (mouse): 2
+Round
+IP HSLN4TFZ (mouse): 2
+IP T2CDU8A5 (mouse): 2
+IP SDU8I1T0 (mouse): 2
+IP BSUAOFHB (mouse): 2
+Round
+IP NO2ER5FI (mouse): 2
+IP 4L0GK70B (mouse): 2
+IP 7BEFG33U (mouse): 2
+Round
+IP NO2ER5FI (mouse): 2
+IP 4L0GK70B (mouse): 2
+IP 7BEFG33U (mouse): 2
+Round
+IP 7A9MKXTT (mouse): 2
+IP E5134DU6 (mouse): 2
+Round
+IP 7A9MKXTT (mouse): 2
+IP E5134DU6 (mouse): 2
+Round
+IP 93FP4DVS (mouse): 2
+IP LB066ATK (mouse): 2
+IP ZI0XF1MQ (mouse): 2
+Round
+IP 93FP4DVS (mouse): 2
+IP LB066ATK (mouse): 2
+IP ZI0XF1MQ (mouse): 2
+Round
+IP 5LVQE0R1 (mouse): 2
+IP F0X3TTQ5 (mouse): 2
+Round
+IP 5LVQE0R1 (mouse): 2
+IP F0X3TTQ5 (mouse): 2
+Round
+IP O1ALGD7W (mouse): 2
+IP 6HEH2PQ3 (mouse): 2
+IP BHDEQ38D (mouse): 2
+IP T0S19NQB (mouse): 2
+Round
+IP O1ALGD7W (mouse): 2
+IP 6HEH2PQ3 (mouse): 2
+IP BHDEQ38D (mouse): 2
+IP T0S19NQB (mouse): 2
+Round
+IP LS92MQ2I (mouse): 2
+IP GCKITV7R (mouse): 2
+Round
+IP LS92MQ2I (mouse): 2
+IP GCKITV7R (mouse): 2
+Round
+IP GEQUBUC2 (mouse): 2
+IP CWGLZBHT (mouse): 2
+Round
+IP GEQUBUC2 (mouse): 2
+IP CWGLZBHT (mouse): 2
+Round
+IP E2B7UKEU (mouse): 2
+IP 698FDUBZ (mouse): 2
+Round
+IP E2B7UKEU (mouse): 2
+IP 698FDUBZ (mouse): 2
+Round
+IP 6WKUSQF8 (mouse): 2
+IP A1JQBTTX (mouse): 2
+IP G6RIMNKA (mouse): 2
+IP KOV00L9G (mouse): 2
+Round
+IP 6WKUSQF8 (mouse): 2
+IP A1JQBTTX (mouse): 2
+IP G6RIMNKA (mouse): 2
+IP KOV00L9G (mouse): 2
+Round
+No mice got through this round.
+Round
+No mice got through this round.
+Number of total responses 520
+Number of good responses: 208
+Number of responses less than ideal: 546.6666666666667
+Finished run
+Test case passed. Your score: 139.666667. Benchmark score: 113.291667. You/Benchmark: 1.232806.You handled 208 legitimate responses and you received 68.33 negative points for idle time on the backends. The benchmark handled 205 and received 91.71 negative points.

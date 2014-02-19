@@ -1,0 +1,35 @@
+No test case supplied. Randomly choosing among defaults.
+About to run test case: level0-HhC91MrU7B
+Beginning run.
+Finished run
+Test case failed. Your time: 0.113839. Benchmark time: 0.701469
+Here is the head of your output:
+Eosaurus solifuge Mamie disrelated arrowed brachigerous revegetation fruittime gaut Ebionitism uncomprehension unvalidly reim curiescopy collegiation VRquire unmanducated denaturation helioscopic relatival escalader persimmonR.
+vermis spermatogenetic republisher.
+superprosperous Asteroidea overspeculate tbulger outbrother delapsion hub frowstily unshyness.
+saw farrier subjunction Carlyleian tetrapous StellaWCNdRuj palatinitey conchologically durukuli elateroid toff plus entoderm echiuroid lemmocyte knifeproof.
+hough Uropygi stepfatherly finebent eclogite jRXgdispeoplement Scenopinidae etherealize wherry windlike.
+peerless tannogelatin.
+albumen bojo eatable precentral Polab speaking nontrader limitlessly ilvaite drastically VerrucariaMinY.
+Margot unqualifying indamine taintlessness amygdalic Asterinidae slowworm bepride tetrapyrenous.
+Longobardic mxUzbeg outworld electropercussive regma underspecified wellness kleeneboc dittogram stipulatorEuPi.
+scholarism medullispinal Phomopsis.
+nucle
+
+***********
+
+Here is the head of the diff between your output and the benchmark:
+- <Eosaurus> solifuge <Mamie> disrelated arrowed brachigerous revegetation fruittime gaut <Ebionitism> uncomprehension unvalidly reim curiescopy collegiation <VRquire> unmanducated denaturation helioscopic relatival escalader <persimmonR.>
++ Eosaurus solifuge Mamie disrelated arrowed brachigerous revegetation fruittime gaut Ebionitism uncomprehension unvalidly reim curiescopy collegiation VRquire unmanducated denaturation helioscopic relatival escalader persimmonR.
+- vermis spermatogenetic <republisher.>
++ vermis spermatogenetic republisher.
+- superprosperous <Asteroidea> overspeculate <tbulger> outbrother delapsion hub frowstily <unshyness.>
++ superprosperous Asteroidea overspeculate tbulger outbrother delapsion hub frowstily unshyness.
+- saw farrier subjunction <Carlyleian> tetrapous <StellaWCNdRuj> <palatinitey> conchologically durukuli elateroid toff plus entoderm echiuroid lemmocyte <knifeproof.>
++ saw farrier subjunction Carlyleian tetrapous StellaWCNdRuj palatinitey conchologically durukuli elateroid toff plus entoderm echiuroid lemmocyte knifeproof.
+- hough <Uropygi> stepfatherly finebent eclogite <jRXgdispeoplement> <Scenopinidae> etherealize wherry <windlike.>
++ hough Uropygi stepfatherly finebent eclogite jRXgdispeoplement Scenopinidae etherealize wherry windlike.
+- peerless <tannogelatin.>
++ peerless tannogelatin.
+- albumen bojo eatable precentral <Polab> speaking nontrader limitlessly ilvaite drastically <VerrucariaMinY.>
+

@@ -1,0 +1,11 @@
+Private Gitcoin ledger
+==============
+gdb: 40
+siddarth: 59
+christian: 48
+andy: 29
+nelhage: 62
+carl: 47
+ludwig: 37
+pa: 47
+user-vyz65jfl: 18
